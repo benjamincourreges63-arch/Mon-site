@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Manga Hook TikTok — Venezuela → Martinique</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+:root {
+--night: #0a0a12; --night-2: #12121c; --night-3: #1a1a28;
+--panel: #16161f; --panel-2: #1e1e2b; --border: #2a2a3a; --border-soft: #23232f;
+--orange: #e87b35; --orange-soft: #f0a060; --orange-deep: #b85a1e;
+--blue: #4a7bc8; --blue-soft: #6a9be0; --blue-deep: #2c4a80;
+--yellow: #e5c15a; --yellow-soft: #f0d080; --yellow-deep: #b89a3a;
+--purple: #8b5fc4; --purple-soft: #a880d8; --purple-deep: #5c3a8a;
+--pink: #e8a0b8; --teal: #6ab8b0; --mint: #a8d8c8; --lavender: #c8b0e0;
+--ink: #e8e6e0; --ink-dim: #8a8896; --ink-faint: #4a4858;
+--success: #4a9d6a; --error: #c85a4a; --warn: #d4a017;
+--radius: 4px; --font-serif: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+--font-sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+--font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+}
+html, body { background: var(--night); }
+body { font-family: var(--font-sans); background: var(--night);
+background-image: radial-gradient(circle at 15% 0%, rgba(232,123,53,0.06) 0%, transparent 45%),
+radial-gradient(circle at 85% 100%, rgba(139,95,196,0.06) 0%, transparent 45%),
+radial-gradient(circle at 50% 50%, rgba(74,123,200,0.03) 0%, transparent 60%);
+background-attachment: fixed; color: var(--ink); min-height: 100vh;
+padding: 1.5rem 1rem 24rem; font-size: 15px; line-height: 1.55;
+max-width: 900px; margin: 0 auto; letter-spacing: 0.01em; }
+header { margin-bottom: 2rem; text-align: center; position: relative; padding: 1rem 0 1.5rem; }
+header::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 40px; height: 2px; background: linear-gradient(90deg, transparent, var(--yellow), transparent); }
+header::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 1px; background: linear-gradient(90deg, transparent, var(--orange), var(--yellow), var(--purple), transparent); opacity: 0.5; }
+.kata-mark { display: inline-block; font-family: var(--font-serif); font-size: 0.75rem; letter-spacing: 0.4em; color: var(--yellow); text-transform: uppercase; margin-bottom: 0.6rem; opacity: 0.75; }
+h1 { font-family: var(--font-serif); font-size: 2.2rem; font-weight: 300; letter-spacing: 0.02em; margin-bottom: 0.5rem; background: linear-gradient(135deg, var(--orange) 0%, var(--yellow) 30%, var(--mint) 50%, var(--lavender) 75%, var(--purple) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.05; }
+.subtitle { font-family: var(--font-serif); font-size: 0.95rem; color: var(--ink-dim); font-style: italic; letter-spacing: 0.05em; }
+.toast { position: fixed; top: 1.5rem; left: 50%; transform: translateX(-50%) translateY(-120px); background: var(--night-3); color: var(--ink); border: 1px solid var(--border); border-left: 3px solid var(--yellow); padding: 0.85rem 1.4rem; border-radius: var(--radius); font-size: 0.85rem; font-weight: 500; box-shadow: 0 8px 32px rgba(0,0,0,0.6); z-index: 1000; opacity: 0; transition: transform 0.35s cubic-bezier(0.2,0.9,0.3,1.2), opacity 0.35s ease; max-width: 90vw; text-align: center; display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-sans); }
+.toast.visible { transform: translateX(-50%) translateY(0); opacity: 1; }
+.toast.success { border-left-color: var(--success); }
+.toast.error { border-left-color: var(--error); }
+.toast.warn { border-left-color: var(--warn); }
+.info-banner { background: linear-gradient(135deg, rgba(200,176,224,0.06), rgba(168,216,200,0.05)); border: 1px solid var(--border); border-left: 2px solid var(--lavender); padding: 1rem 1.15rem; border-radius: var(--radius); font-size: 0.8rem; color: var(--ink-dim); margin-bottom: 1.2rem; line-height: 1.6; position: relative; }
+.info-banner::before { content: '漫'; position: absolute; top: 0.6rem; right: 0.9rem; font-family: var(--font-serif); font-size: 1.6rem; color: var(--orange); opacity: 0.2; line-height: 1; }
+.info-banner strong { color: var(--ink); font-weight: 600; }
+.info-banner strong.hl-orange { color: var(--orange-soft); }
+.info-banner strong.hl-blue { color: var(--blue-soft); }
+.info-banner strong.hl-yellow { color: var(--yellow-soft); }
+.info-banner strong.hl-purple { color: var(--purple-soft); }
+.info-banner strong.hl-mint { color: var(--mint); }
+.section { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 1rem; overflow: hidden; }
+.section.open { box-shadow: 0 0 0 1px rgba(229,193,90,0.05), 0 4px 20px rgba(0,0,0,0.3); }
+.section-header { padding: 1rem 1.2rem; cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center; }
+.section-header:active { background: var(--panel-2); }
+.section-title { font-family: var(--font-serif); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ink); font-weight: 500; display: flex; align-items: center; gap: 0.6rem; }
+.section-title .badge { display: inline-block; padding: 0.15rem 0.55rem; background: transparent; color: var(--yellow); border: 1px solid var(--yellow-deep); border-radius: 2px; font-size: 0.6rem; letter-spacing: 0.15em; font-family: var(--font-sans); font-weight: 600; }
+.section-title .badge.soft { color: var(--blue-soft); border-color: var(--blue-deep); }
+.section-title .badge.error { color: var(--error); border-color: #8a3a3a; }
+.section-title .badge.lavender { color: var(--lavender); border-color: #8a6aa8; }
+.section-header .chevron { font-size: 0.7rem; color: var(--ink-faint); transition: transform 0.3s; }
+.section.open .section-header .chevron { transform: rotate(180deg); color: var(--yellow); }
+.section-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.section.open .section-body { max-height: 8000px; }
+.section-content { padding: 0 1.2rem 1.2rem; }
+.api-panel { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem 1.3rem; margin-bottom: 1rem; transition: border-color 0.3s, box-shadow 0.3s; }
+.api-panel.ok { box-shadow: inset 3px 0 0 var(--success), 0 0 20px rgba(74,157,106,0.08); }
+.api-key-input { width: 100%; padding: 0.85rem 1rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--night-2); color: var(--ink); font-family: var(--font-mono); font-size: 0.82rem; margin-bottom: 0.6rem; }
+.api-key-input:focus { outline: none; border-color: var(--blue); }
+.api-save-btn { width: 100%; padding: 0.85rem 1.2rem; border-radius: var(--radius); border: 1px solid var(--yellow-deep); background: linear-gradient(135deg, rgba(232,123,53,0.15), rgba(229,193,90,0.1)); color: var(--yellow-soft); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; margin-bottom: 0.7rem; }
+.api-status-line { font-size: 0.75rem; padding: 0.6rem 0.9rem; border-radius: var(--radius); display: flex; align-items: center; gap: 0.6rem; background: var(--night-2); color: var(--ink-dim); border: 1px solid var(--border-soft); }
+.api-status-line.ok { background: rgba(74,157,106,0.08); color: var(--success); border-color: rgba(74,157,106,0.3); font-weight: 500; }
+.api-status-line .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ink-faint); flex-shrink: 0; }
+.api-status-line.ok .status-dot { background: var(--success); box-shadow: 0 0 8px var(--success); }
+.api-hint { font-size: 0.72rem; color: var(--ink-dim); margin-top: 0.5rem; }
+.api-hint a { color: var(--blue-soft); text-decoration: none; border-bottom: 1px dotted var(--blue-deep); }
+.stat-line { font-size: 0.72rem; color: var(--ink-dim); margin-top: 0.6rem; padding: 0.5rem 0.7rem; background: var(--night-2); border-radius: var(--radius); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.3rem; border: 1px solid var(--border-soft); font-family: var(--font-mono); }
+.wake-status { font-size: 0.72rem; padding: 0.6rem 0.8rem; border-radius: var(--radius); margin-top: 0.5rem; display: flex; justify-content: space-between; align-items: center; background: rgba(74,123,200,0.08); color: var(--blue-soft); border: 1px solid var(--blue-deep); flex-wrap: wrap; gap: 0.5rem; }
+.wake-status.active { background: rgba(74,157,106,0.08); color: var(--success); border-color: rgba(74,157,106,0.3); }
+.wake-status button { background: transparent; border: 1px solid currentColor; color: inherit; padding: 0.3rem 0.7rem; border-radius: var(--radius); font-size: 0.68rem; cursor: pointer; }
+.ref-drop { border: 2px dashed var(--border); border-radius: var(--radius); padding: 1.5rem 1rem; background: var(--night-2); text-align: center; cursor: pointer; transition: all 0.2s; position: relative; }
+.ref-drop:hover { border-color: var(--yellow-deep); }
+.ref-drop.has-image { padding: 0; border-style: solid; border-color: var(--yellow-deep); }
+.ref-drop input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.ref-drop .ref-icon { font-size: 2rem; color: var(--yellow); opacity: 0.6; margin-bottom: 0.5rem; }
+.ref-drop .ref-text { font-size: 0.82rem; color: var(--ink-dim); line-height: 1.5; }
+.ref-drop .ref-text strong { color: var(--yellow-soft); }
+.ref-drop .ref-hint { font-size: 0.68rem; color: var(--ink-faint); margin-top: 0.4rem; font-family: var(--font-mono); }
+.ref-preview { position: relative; display: block; width: 100%; max-height: 400px; overflow: hidden; }
+.ref-preview img { width: 100%; height: auto; display: block; max-height: 400px; object-fit: contain; background: #000; }
+.ref-preview .ref-remove { position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(200,90,74,0.85); color: #fff; border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 1rem; cursor: pointer; }
+.ref-preview .ref-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.5rem 0.7rem; background: linear-gradient(transparent, rgba(10,10,18,0.9)); font-size: 0.7rem; font-family: var(--font-mono); color: var(--yellow-soft); letter-spacing: 0.1em; }
+.control-row { margin-bottom: 1rem; }
+.control-row:last-child { margin-bottom: 0; }
+.control-label { display: block; font-size: 0.72rem; color: var(--ink-dim); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; }
+select, input[type=text] { width: 100%; padding: 0.8rem 0.95rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--night-2); color: var(--ink); font-family: var(--font-sans); font-size: 0.88rem; }
+select { -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%23e5c15a' d='M0 0l5 6 5-6z'/></svg>"); background-repeat: no-repeat; background-position: right 0.95rem center; background-size: 10px; cursor: pointer; }
+select:focus, input:focus { outline: none; border-color: var(--blue); }
+select option { background: var(--night-3); color: var(--ink); }
+.hook-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.5rem; margin-top: 0.5rem; }
+.hook-card { padding: 0.8rem 0.9rem; border-radius: var(--radius); border: 1px solid var(--border-soft); background: var(--night-2); cursor: pointer; transition: all 0.15s; }
+.hook-card:hover { border-color: var(--yellow-deep); }
+.hook-card.selected { background: linear-gradient(135deg, rgba(229,193,90,0.08), rgba(232,123,53,0.04)); border-color: var(--yellow-deep); }
+.hook-card .hc-emoji { font-size: 1.3rem; margin-bottom: 0.3rem; }
+.hook-card .hc-name { font-family: var(--font-serif); font-size: 0.9rem; color: var(--yellow-soft); font-weight: 500; }
+.hook-card .hc-desc { font-size: 0.68rem; color: var(--ink-dim); margin-top: 0.2rem; line-height: 1.35; }
+.btn-primary { width: 100%; padding: 1.2rem; border-radius: var(--radius); border: 1px solid var(--yellow-deep); background: linear-gradient(135deg, rgba(232,123,53,0.2) 0%, rgba(229,193,90,0.15) 50%, rgba(139,95,196,0.15) 100%); color: var(--yellow-soft); font-size: 0.95rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; cursor: pointer; margin-bottom: 1rem; }
+.btn-primary:disabled { opacity: 0.25; cursor: not-allowed; }
+.btn-stop { width: 100%; padding: 0.9rem; border-radius: var(--radius); border: 1px solid var(--error); background: transparent; color: var(--error); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; margin-bottom: 1rem; display: none; }
+.btn-stop.visible { display: block; }
+.phase-bar { background: var(--panel); border: 1px solid var(--border); border-left: 2px solid var(--purple); border-radius: var(--radius); padding: 0.9rem 1rem; margin-bottom: 1rem; display: none; }
+.phase-bar.visible { display: block; }
+.phase-steps { display: flex; gap: 0.4rem; margin-bottom: 0.7rem; flex-wrap: wrap; }
+.phase-step { flex: 1; min-width: 70px; padding: 0.5rem 0.6rem; border-radius: var(--radius); background: var(--night-2); border: 1px solid var(--border-soft); font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.08em; text-align: center; color: var(--ink-faint); font-weight: 600; }
+.phase-step.active { color: var(--yellow); border-color: var(--yellow-deep); background: rgba(229,193,90,0.06); }
+.phase-step.done { color: var(--success); border-color: rgba(74,157,106,0.3); background: rgba(74,157,106,0.05); }
+.phase-info { font-size: 0.75rem; font-family: var(--font-mono); color: var(--ink-dim); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.4rem; }
+.queue { margin-top: 1.2rem; }
+.queue-summary { background: var(--panel); border: 1px solid var(--border); border-left: 2px solid var(--purple); border-radius: var(--radius); padding: 0.8rem 1rem; margin-bottom: 0.7rem; font-size: 0.78rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-family: var(--font-mono); }
+.queue-summary .progress-text { color: var(--yellow); font-weight: 600; }
+.queue-summary .eta-text { color: var(--ink-dim); }
+.queue-item { display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 0.9rem; border-radius: var(--radius); border: 1px solid var(--border-soft); margin-bottom: 0.4rem; background: var(--panel); font-size: 0.82rem; }
+.queue-item.pending { opacity: 0.45; }
+.queue-item.creating { border-color: var(--warn); background: linear-gradient(90deg, rgba(212,160,23,0.05), var(--panel)); }
+.queue-item.processing { border-color: var(--blue); background: linear-gradient(90deg, rgba(74,123,200,0.06), var(--panel)); }
+.queue-item.done { border-color: var(--success); background: linear-gradient(90deg, rgba(74,157,106,0.05), var(--panel)); }
+.queue-item.failed { border-color: var(--error); }
+.queue-item .q-icon { font-size: 1rem; width: 1.5rem; text-align: center; flex-shrink: 0; }
+.queue-item .q-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--font-serif); }
+.queue-item .q-status { font-size: 0.7rem; color: var(--ink-dim); text-align: right; max-width: 55%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--font-mono); }
+.scenario-panel { display: none; margin-top: 1.5rem; }
+.scenario-panel.visible { display: block; }
+.scenario-card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.2rem 1.3rem; margin-bottom: 1rem; }
+.scenario-title { font-family: var(--font-serif); font-size: 1.4rem; color: var(--lavender); margin-bottom: 0.5rem; text-align: center; }
+.scenario-meta { font-size: 0.72rem; color: var(--ink-dim); text-align: center; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; font-family: var(--font-mono); }
+.scene-block { border-left: 2px solid var(--border); padding-left: 0.9rem; margin-bottom: 0.9rem; }
+.scene-block.active { border-left-color: var(--yellow); }
+.scene-block.done { border-left-color: var(--success); }
+.scene-number { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-faint); font-family: var(--font-mono); margin-bottom: 0.2rem; }
+.scene-dialogue { font-family: var(--font-serif); font-size: 1rem; font-style: italic; color: var(--yellow-soft); line-height: 1.5; padding: 0.4rem 0.7rem; background: rgba(229,193,90,0.04); border-left: 2px solid var(--yellow-deep); border-radius: 2px; margin: 0.4rem 0; }
+.scene-dialogue .speaker-name { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--lavender); font-style: normal; font-family: var(--font-sans); font-weight: 600; display: block; margin-bottom: 0.2rem; }
+.scene-action { font-size: 0.72rem; color: var(--ink-dim); margin-top: 0.3rem; }
+.images-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.6rem; margin-top: 1.2rem; }
+.image-card { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: var(--night-2); position: relative; aspect-ratio: 9/16; }
+.image-card.loading { display: flex; align-items: center; justify-content: center; color: var(--ink-faint); font-size: 0.65rem; font-family: var(--font-mono); }
+.image-card.loading::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(229,193,90,0.08) 50%, transparent 70%); animation: shimmer 1.8s linear infinite; }
+@keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+.image-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.image-card .img-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.3rem 0.5rem; background: linear-gradient(transparent, rgba(10,10,18,0.9)); font-size: 0.6rem; font-family: var(--font-mono); color: var(--yellow-soft); letter-spacing: 0.1em; text-transform: uppercase; }
+.image-card.ref .img-label { color: var(--mint); }
+.gallery { margin-top: 1.8rem; }
+.gallery-title { font-family: var(--font-serif); font-size: 1.1rem; color: var(--ink); margin-bottom: 1rem; letter-spacing: 0.15em; text-transform: uppercase; text-align: center; position: relative; padding-bottom: 0.8rem; }
+.gallery-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 1px; background: linear-gradient(90deg, transparent, var(--yellow), transparent); }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.9rem; }
+.gallery-item { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: #000; }
+.gallery-item video { width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover; }
+.gallery-item .g-caption { padding: 0.6rem 0.7rem; background: var(--panel); display: flex; flex-direction: column; gap: 0.25rem; border-top: 1px solid var(--border); }
+.gallery-item .g-caption strong { font-family: var(--font-serif); color: var(--yellow-soft); font-size: 0.82rem; font-weight: 500; }
+.gallery-item .g-caption .g-dialogue { font-family: var(--font-serif); font-style: italic; font-size: 0.72rem; color: var(--lavender); line-height: 1.4; }
+.gallery-item .g-caption span { font-size: 0.6rem; opacity: 0.65; letter-spacing: 0.12em; text-transform: uppercase; }
+.status-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--night-3); border-top: 1px solid var(--border); color: var(--ink); padding: 0.85rem 1.1rem; font-size: 0.78rem; display: flex; align-items: center; gap: 0.7rem; transform: translateY(100%); transition: transform 0.35s cubic-bezier(0.2,0.9,0.3,1); z-index: 100; font-family: var(--font-mono); box-shadow: 0 -4px 20px rgba(0,0,0,0.4); }
+.status-bar.visible { transform: translateY(0); }
+.status-bar .spinner { width: 12px; height: 12px; border: 2px solid rgba(229,193,90,0.2); border-top-color: var(--yellow); border-radius: 50%; animation: spin 0.8s linear infinite; flex-shrink: 0; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.hidden { display: none !important; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--night-2); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+#noSleepCanvas { position: fixed; top: 0; left: 0; width: 1px; height: 1px; opacity: 0.01; pointer-events: none; z-index: -1; }
+#noSleepVideo { position: fixed; top: 0; left: 0; width: 1px; height: 1px; opacity: 0.01; pointer-events: none; z-index: -1; }
+.debug-panel { position: fixed; bottom: 0; left: 0; right: 0; height: 260px; background: #05050a; border-top: 2px solid var(--yellow-deep); z-index: 200; display: flex; flex-direction: column; font-family: var(--font-mono); box-shadow: 0 -8px 32px rgba(0,0,0,0.7); transition: height 0.3s ease; }
+.debug-panel.collapsed { height: 36px; }
+.debug-header { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.8rem; background: linear-gradient(90deg, #0f0f18, #1a1a28); border-bottom: 1px solid var(--border); flex-shrink: 0; cursor: pointer; user-select: none; }
+.debug-title { font-size: 0.72rem; color: var(--yellow); letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; }
+.debug-title .debug-badge { font-size: 0.6rem; padding: 0.1rem 0.4rem; background: var(--yellow); color: var(--night); border-radius: 2px; font-weight: 700; }
+.debug-actions { display: flex; gap: 0.3rem; }
+.debug-actions button { background: transparent; border: 1px solid var(--border); color: var(--ink-dim); font-size: 0.62rem; padding: 0.25rem 0.55rem; border-radius: 2px; cursor: pointer; }
+.debug-actions button:hover { color: var(--yellow); border-color: var(--yellow-deep); }
+.debug-body { flex: 1; overflow-y: auto; padding: 0.5rem 0.7rem 1rem; font-size: 0.72rem; line-height: 1.45; color: #c8c8d0; }
+.debug-entry { margin-bottom: 0.3rem; padding: 0.25rem 0.4rem; border-left: 2px solid transparent; border-radius: 2px; word-break: break-word; }
+.debug-entry.info { border-left-color: var(--ink-faint); }
+.debug-entry.success { border-left-color: var(--success); background: rgba(74,157,106,0.04); }
+.debug-entry.warn { border-left-color: var(--warn); background: rgba(212,160,23,0.04); }
+.debug-entry.error { border-left-color: var(--error); background: rgba(200,90,74,0.06); color: #f0a0a0; }
+.debug-entry.api { border-left-color: var(--blue); background: rgba(74,123,200,0.04); }
+.debug-entry.response { border-left-color: var(--purple); background: rgba(139,95,196,0.04); }
+.debug-entry.state { border-left-color: var(--orange); background: rgba(232,123,53,0.04); }
+.debug-entry.ai { border-left-color: var(--lavender); background: rgba(200,176,224,0.05); }
+.debug-time { color: var(--ink-faint); margin-right: 0.5rem; font-size: 0.65rem; }
+.debug-cat { color: var(--yellow-soft); font-weight: 600; margin-right: 0.4rem; font-size: 0.65rem; }
+.debug-msg { color: #d8d8e0; }
+.debug-data { margin-top: 0.3rem; padding: 0.4rem 0.5rem; background: #0a0a12; border: 1px solid var(--border-soft); border-radius: 2px; font-size: 0.68rem; color: #a8d8b0; max-height: 180px; overflow: auto; white-space: pre-wrap; word-break: break-all; line-height: 1.4; }
+.raw-viewer-toggle { font-size: 0.62rem; color: var(--blue-soft); cursor: pointer; margin-top: 0.4rem; border-bottom: 1px dotted var(--blue-deep); display: inline-block; }
+.raw-viewer { margin-top: 0.6rem; padding: 0.7rem; background: #05050a; border: 1px solid var(--border); border-radius: var(--radius); font-family: var(--font-mono); font-size: 0.68rem; color: #a8d8b0; max-height: 340px; overflow: auto; white-space: pre-wrap; word-break: break-all; line-height: 1.45; display: none; }
+.raw-viewer.visible { display: block; }
+@media (max-width: 480px) {
+h1 { font-size: 1.8rem; }
+.images-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); }
+.gallery-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+body { padding-bottom: 22rem; }
+.debug-panel { height: 220px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="kata-mark">漫 · Manga Hook TikTok</div>
+<h1>Venezuela → Martinique</h1>
+<p class="subtitle">Votre photo devient 5 hooks TikTok manga de la traversée</p>
+</header>
+
+<div class="info-banner">
+<strong>Le concept :</strong> vous importez <strong class="hl-mint">UNE photo de vous et vos amis</strong>.
+L'IA la verrouille comme personnage principal, écrit un <strong class="hl-lavender">mini-scénario manga</strong> en 5 hooks de 6 secondes
+(départ, mer, dauphins, tempête, arrivée), génère les <strong class="hl-blue">keyframes</strong> puis les <strong class="hl-orange">vidéos manga</strong>.
+<strong class="hl-yellow">Format TikTok 9:16 · Sans musique · Effets manga (lignes de vitesse, onomatopées visuelles)</strong>.
+</div>
+
+<div class="api-panel" id="api-panel">
+<input type="password" class="api-key-input" id="api-key-input" placeholder="Collez votre clé API ici (sk-...)" autocomplete="off" spellcheck="false">
+<button type="button" class="api-save-btn" id="api-save-btn">Enregistrer la clé</button>
+<div class="api-status-line" id="api-status-line"><span class="status-dot"></span><span id="api-status-text">Aucune clé API enregistrée</span></div>
+<div class="api-hint">Clé gratuite sur <a href="https://platform.agnes-ai.com" target="_blank">platform.agnes-ai.com</a> → Settings → API Keys</div>
+<div class="stat-line" id="stat-line"><span>📊 Vitesse vidéo : <span id="stat-speed">en attente</span></span><span id="stat-samples">0 génération</span></div>
+<div class="wake-status" id="wake-status"><span id="wake-status-text">💤 Veille automatique</span><button type="button" id="wake-toggle-btn">Garder l'écran allumé</button></div>
+</div>
+
+<div class="section open" id="section-ref">
+<div class="section-header" data-toggle="section-ref"><span class="section-title">📸 Photo de vous et vos amis <span class="badge error">obligatoire</span></span><span class="chevron">▼</span></div>
+<div class="section-body"><div class="section-content">
+<div class="ref-drop" id="ref-drop">
+<input type="file" accept="image/*" id="ref-image-input">
+<div class="ref-icon">📸</div>
+<div class="ref-text"><strong>Cliquez pour choisir une photo</strong><br>Un selfie, une photo de groupe, une photo de vous…</div>
+<div class="ref-hint">L'IA gardera vos visages et vous représentera en style manga.</div>
+</div>
+</div></div>
+</div>
+
+<div class="section open" id="section-hooks">
+<div class="section-header" data-toggle="section-hooks"><span class="section-title">🎬 Choix des hooks TikTok <span class="badge soft" id="hooks-count-badge">5 sélectionnés</span></span><span class="chevron">▼</span></div>
+<div class="section-body"><div class="section-content">
+<div class="picker-toolbar" style="display:flex;gap:0.4rem;margin-bottom:0.7rem;flex-wrap:wrap;">
+<button type="button" id="hooks-all-btn" style="flex:1;min-width:100px;padding:0.5rem 0.7rem;border-radius:var(--radius);border:1px solid var(--border);background:var(--night-2);color:var(--ink-dim);font-size:0.68rem;cursor:pointer;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;">✓ Tout</button>
+<button type="button" id="hooks-none-btn" style="flex:1;min-width:100px;padding:0.5rem 0.7rem;border-radius:var(--radius);border:1px solid var(--border);background:var(--night-2);color:var(--ink-dim);font-size:0.68rem;cursor:pointer;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;">✕ Aucun</button>
+</div>
+<div class="hook-grid" id="hooks-grid"></div>
+</div></div>
+</div>
+
+<div class="section open" id="section-settings">
+<div class="section-header" data-toggle="section-settings"><span class="section-title">⚙️ Réglages</span><span class="chevron">▼</span></div>
+<div class="section-body"><div class="section-content">
+<div class="control-row">
+<label class="control-label">Durée de chaque hook</label>
+<select id="duration-select">
+<option value="121">5 secondes (121 frames)</option>
+<option value="145" selected>6 secondes (145 frames)</option>
+<option value="169">7 secondes (169 frames)</option>
+</select>
+</div>
+<div class="control-row">
+<label class="control-label">Style manga</label>
+<select id="manga-style-select">
+<option value="shonen" selected>Shōnen (action, lignes de vitesse, dynamique)</option>
+<option value="seinen">Seinen (réaliste, sombre, mature)</option>
+<option value="ghibli">Ghibli (doux, poétique, nature)</option>
+<option value="cyberpunk">Cyberpunk manga (néons, futuriste)</option>
+<option value="retro-90s">Rétro 90s (Dragon Ball, Sailor Moon)</option>
+</select>
+</div>
+<div class="control-row">
+<label class="control-label">Intensité du mouvement</label>
+<select id="intensity-select">
+<option value="moderate">Modérée — élégante</option>
+<option value="strong" selected>Forte — dynamique, héroïque</option>
+<option value="subtle">Subtile — contemplative</option>
+</select>
+</div>
+</div></div>
+</div>
+
+<button type="button" class="btn-primary" id="generate-btn" disabled>Ajoutez votre clé API</button>
+<button type="button" class="btn-stop" id="stop-btn">⏹ Arrêter la génération</button>
+
+<div class="phase-bar" id="phase-bar">
+<div class="phase-steps">
+<div class="phase-step" data-phase="text">1 · Scénario</div>
+<div class="phase-step" data-phase="images">2 · Keyframes</div>
+<div class="phase-step" data-phase="videos">3 · Vidéos</div>
+<div class="phase-step" data-phase="done">4 · Terminé</div>
+</div>
+<div class="phase-info"><span id="phase-detail">En attente</span><span id="phase-eta"></span></div>
+</div>
+
+<div class="scenario-panel" id="scenario-panel">
+<div class="scenario-card" id="scenario-card"></div>
+<span class="raw-viewer-toggle" id="raw-scenario-toggle">▸ Voir la réponse brute du scénario (JSON)</span>
+<pre class="raw-viewer" id="raw-scenario"></pre>
+<div class="images-grid" id="images-grid"></div>
+</div>
+
+<div class="queue" id="queue" style="display:none;"></div>
+
+<div class="gallery" id="gallery" style="display:none;">
+<div class="gallery-title">Hooks TikTok générés</div>
+<div class="gallery-grid" id="gallery-grid"></div>
+</div>
+
+<div class="status-bar" id="status-bar"><div class="spinner"></div><span id="status-text">Préparation…</span></div>
+
+<div class="toast" id="toast"><span class="toast-icon" id="toast-icon">✓</span><span id="toast-text">Message</span></div>
+
+<div class="debug-panel" id="debug-panel">
+<div class="debug-header" id="debug-header">
+<div class="debug-title">🖥️ Console de débogage <span class="debug-badge" id="debug-count">0</span></div>
+<div class="debug-actions">
+<button type="button" id="debug-copy-btn">Copier</button>
+<button type="button" id="debug-clear-btn">Effacer</button>
+<button type="button" id="debug-collapse-btn">−</button>
+</div>
+</div>
+<div class="debug-body" id="debug-body"></div>
+</div>
+
+<canvas id="noSleepCanvas" width="2" height="2"></canvas>
+<video id="noSleepVideo" playsinline muted loop></video>
+
+<script>
+const API_BASE = 'https://apihub.agnes-ai.com/v1';
+const POLL_BASE = 'https://apihub.agnes-ai.com/agnesapi';
+const MODEL_TEXT = 'agnes-2.5-flash';
+const MODEL_IMAGE = 'agnes-image-2.1-flash';
+const MODEL_VIDEO = 'agnes-video-v2.0';
+const FRAME_RATE = 24;
+
+const TEXT_MAX_TOKENS = 8000;
+const TEXT_TEMPERATURE = 0.9;
+
+const IMAGE_PARALLEL = 3;
+const IMAGE_INTERVAL_MS = 3400;
+const IMAGE_INTERVAL_MIN = 3200;
+const IMAGE_INTERVAL_MAX = 12000;
+const IMAGE_INTERVAL_SAFE = 4000;
+
+const VIDEO_INTERVAL_MIN = 62000;
+const VIDEO_INTERVAL_MAX = 90000;
+const VIDEO_INTERVAL_SAFE = 75000;
+
+const VIDEO_FIRST_POLL_DELAY_SEC = 80;
+const VIDEO_POLL_INTERVALS = [8, 8, 12, 12, 20, 20, 25];
+const VIDEO_MAX_POLL_ATTEMPTS = 100;
+
+const REF_MAX_SIDE = 1280;
+
+const TIMING_CACHE_KEY = 'manga_hook_timing_v1';
+const API_KEY_STORAGE = 'agnes_api_key';
+const WAKE_LOCK_PREF = 'agnes_wakelock_enabled';
+
+const DEBUG_MAX_ENTRIES = 800;
+
+// ─── Catalogue des 10 hooks possibles ───
+const HOOKS_CATALOG = [
+{ id: 'depart', name: 'Le Départ', emoji: '🛶',
+desc: 'Vous embarquez sur un bateau au Venezuela, sacs sur le dos, adrénaline du départ.',
+scene: 'The group of friends boards a small boat at a Caribbean Venezuelan port at sunrise. They carry backpacks, smiling nervously, looking at the horizon. The camera slowly pushes in on their determined faces.' },
+{ id: 'mer', name: 'Mer Ouverte', emoji: '🌊',
+desc: 'Le bateau file sur une mer turquoise, vous regardez l\'horizon en héros.',
+scene: 'The boat rides fast over turquoise Caribbean waves. The friends stand at the bow, wind in their hair, eyes fixed on the horizon. Dynamic camera orbits the boat, speed lines in the sky.' },
+{ id: 'dauphins', name: 'Dauphins', emoji: '🐬',
+desc: 'Des dauphins sautent autour de votre bateau, moment magique.',
+scene: 'Dolphins leap joyfully around the small boat. The friends laugh and point, leaning over the edge. Magical sunrise light, sparkling water, slow-motion droplets in the air.' },
+{ id: 'tempete', name: 'La Tempête', emoji: '⛈️',
+desc: 'Tempête en pleine mer, vous tenez bon, héros sous la pluie.',
+scene: 'A violent tropical storm hits the boat. Dark clouds, lightning, heavy rain. The friends hold onto the boat, determined expressions, soaked hair, dramatic manga lighting.' },
+{ id: 'iles', name: 'Les Îles', emoji: '🏝️',
+desc: 'Premières îles visibles, la Martinique se rapproche, joie.',
+scene: 'The first tropical islands appear on the horizon. The friends stand up in the boat, arms raised, shouting with joy. Golden hour light, lush green mountains in the distance.' },
+{ id: 'nuit', name: 'Nuit Étoilée', emoji: '✨',
+desc: 'Navigation de nuit, ciel étoilé, phosphorescence sur l\'eau.',
+scene: 'The boat sails at night under a spectacular starry sky. Bioluminescent plankton glows blue in the water. The friends lie on the deck, watching shooting stars. Manga-style cosmic wonder.' },
+{ id: 'approche', name: 'Approche Martinique', emoji: '⛰️',
+desc: 'La silhouette de la Martinique grandit, Mont Pelée visible.',
+scene: 'The silhouette of Martinique grows on the horizon, Mont Pelée volcano visible. The friends stand at the bow, emotional, hands on each other\'s shoulders. Dramatic zoom-in on the island.' },
+{ id: 'arrivee', name: 'L\'Arrivée', emoji: '🎉',
+desc: 'Vous débarquez en Martinique, cri de victoire, accolade.',
+scene: 'The friends jump onto the Martinique shore, shouting with joy, hugging each other, arms raised to the sky. Golden sunset, palm trees, celebratory manga energy.' },
+{ id: 'reflexion', name: 'Réflexion', emoji: '💭',
+desc: 'Flash-back contemplatif : pourquoi ce voyage, que représente-t-il ?',
+scene: 'A quiet moment on the boat, the friends looking back at Venezuela fading away. Melancholic, thoughtful expressions. Soft ambient light, clouds drifting slowly, wind in sails.' },
+{ id: 'carte', name: 'La Carte', emoji: '🗺️',
+desc: 'Vue stylisée : votre trajet Venezuela → Martinique sur une carte manga.',
+scene: 'A stylized manga map shows the trajectory from Venezuela to Martinique. Animated dotted line. The friends\' faces appear as small portraits along the path. Epic adventure map style.' }
+];
+
+const MANGA_STYLES = {
+shonen: 'Japanese shōnen manga style, bold black ink outlines, dynamic action lines, speed effects, expressive large eyes, dramatic crosshatching shadows, high contrast black and white with selective color accents, Naruto / One Piece / Dragon Ball aesthetic',
+seinen: 'Japanese seinen manga style, realistic detailed anatomy, mature tone, subtle screentones, muted palette, detailed backgrounds, cinematic framing, Berserk / Vagabond / Monster aesthetic',
+ghibli: 'Studio Ghibli anime style, hand-painted watercolor backgrounds, soft warm light, gentle character design, Hayao Miyazaki aesthetic, lush nature, poetic atmosphere',
+cyberpunk: 'Cyberpunk manga style, neon pink and cyan lighting, holographic details, futuristic cityscape, Ghost in the Shell / Akira / Alita aesthetic, dark urban atmosphere',
+'retro-90s': 'Retro 1990s anime style, cel-shaded colors, vintage grain, Sailor Moon / Dragon Ball Z / Evangelion aesthetic, nostalgic pastel palette, dramatic sparkle effects'
+};
+
+let createImageIntervalMs = IMAGE_INTERVAL_SAFE;
+let createVideoIntervalMs = VIDEO_INTERVAL_SAFE;
+let imageAttemptsSinceLastError = 0;
+let videoAttemptsSinceLastError = 0;
+
+let debugCount = 0;
+let debugEntries = [];
+let debugCollapsed = false;
+
+function esc(s) {
+return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+// ─── Console debug (identique à tes sources) ───
+function debugLog(level, category, message, data) {
+const body = document.getElementById('debug-body');
+if (!body) return;
+const time = new Date().toLocaleTimeString('fr-FR', { hour12: false });
+const entry = document.createElement('div');
+entry.className = 'debug-entry ' + level;
+let html = '<span class="debug-time">' + time + '</span>';
+html += '<span class="debug-cat">[' + esc(category) + ']</span>';
+html += '<span class="debug-msg">' + esc(message) + '</span>';
+if (data !== undefined && data !== null) {
+let dataStr;
+if (typeof data === 'string') dataStr = data;
+else { try { dataStr = JSON.stringify(data, null, 2); } catch (e) { dataStr = String(data); } }
+if (dataStr.length > 4000) dataStr = dataStr.slice(0, 4000) + '\n…[tronqué]';
+html += '<pre class="debug-data">' + esc(dataStr) + '</pre>';
+}
+entry.innerHTML = html;
+body.appendChild(entry);
+debugEntries.push({ time, level, category, message });
+if (debugEntries.length > DEBUG_MAX_ENTRIES) debugEntries.shift();
+while (body.children.length > DEBUG_MAX_ENTRIES) body.removeChild(body.firstChild);
+body.scrollTop = body.scrollHeight;
+debugCount++;
+const countEl = document.getElementById('debug-count');
+if (countEl) countEl.textContent = debugCount;
+}
+
+function clearDebug() {
+const body = document.getElementById('debug-body');
+if (body) body.innerHTML = '';
+debugEntries = []; debugCount = 0;
+const countEl = document.getElementById('debug-count');
+if (countEl) countEl.textContent = '0';
+debugLog('info', 'SYSTEM', 'Console effacée');
+}
+
+function copyDebug() {
+const lines = debugEntries.map(e => e.time + ' [' + e.category + '] ' + e.message).join('\n');
+try {
+if (navigator.clipboard && window.isSecureContext) {
+navigator.clipboard.writeText(lines).then(() => showToast('Console copiée', 'success')).catch(() => legacyCopy(lines));
+return;
+}
+} catch (e) {}
+legacyCopy(lines);
+}
+
+function legacyCopy(text) {
+const ta = document.createElement('textarea');
+ta.value = text;
+ta.style.position = 'fixed'; ta.style.opacity = '0';
+document.body.appendChild(ta);
+ta.focus(); ta.select(); ta.setSelectionRange(0, text.length);
+let ok = false;
+try { ok = document.execCommand('copy'); } catch (e) {}
+document.body.removeChild(ta);
+showToast(ok ? 'Console copiée' : 'Copie impossible', ok ? 'success' : 'error');
+}
+
+function toggleDebugCollapse() {
+const panel = document.getElementById('debug-panel');
+const btn = document.getElementById('debug-collapse-btn');
+if (!panel || !btn) return;
+debugCollapsed = !debugCollapsed;
+panel.classList.toggle('collapsed', debugCollapsed);
+btn.textContent = debugCollapsed ? '+' : '−';
+}
+
+let toastTimeout = null;
+function showToast(message, type = 'success', duration = 2500) {
+const toast = document.getElementById('toast');
+const icon = document.getElementById('toast-icon');
+const text = document.getElementById('toast-text');
+if (!toast || !icon || !text) return;
+toast.classList.remove('visible', 'success', 'error', 'warn');
+void toast.offsetWidth;
+const icons = { success: '✓', error: '✕', warn: '⚠' };
+icon.textContent = icons[type] || '✓';
+text.textContent = message;
+toast.classList.add(type);
+requestAnimationFrame(() => toast.classList.add('visible'));
+if (toastTimeout) clearTimeout(toastTimeout);
+toastTimeout = setTimeout(() => toast.classList.remove('visible'), duration);
+}
+
+// ─── Wake Lock ───
+let wakeLockSentinel = null;
+let wakeLockEnabled = false;
+let canvasStream = null;
+let canvasInterval = null;
+
+function isWakeLockSupported() { return 'wakeLock' in navigator && typeof navigator.wakeLock.request === 'function'; }
+
+async function requestWakeLockAPI() {
+if (!isWakeLockSupported()) return false;
+try {
+wakeLockSentinel = await navigator.wakeLock.request('screen');
+wakeLockSentinel.addEventListener('release', () => { wakeLockSentinel = null; updateWakeStatus(); });
+return true;
+} catch (e) { debugLog('warn', 'WAKELOCK', 'Refusé : ' + e.message); return false; }
+}
+
+async function releaseWakeLockAPI() {
+if (wakeLockSentinel) { try { await wakeLockSentinel.release(); } catch (e) {} wakeLockSentinel = null; }
+}
+
+function startCanvasStream() {
+if (canvasStream) return true;
+try {
+const canvas = document.getElementById('noSleepCanvas');
+const video = document.getElementById('noSleepVideo');
+if (!canvas || !video) return false;
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = '#000'; ctx.fillRect(0, 0, 2, 2);
+if (typeof canvas.captureStream !== 'function') return false;
+canvasStream = canvas.captureStream(1);
+let toggle = false;
+canvasInterval = setInterval(() => { toggle = !toggle; ctx.fillStyle = toggle ? '#000' : '#010101'; ctx.fillRect(0, 0, 2, 2); }, 1000);
+video.srcObject = canvasStream; video.muted = true; video.playsInline = true;
+const p = video.play(); if (p && p.catch) p.catch(() => {});
+return true;
+} catch (e) { return false; }
+}
+
+function stopCanvasStream() {
+if (canvasInterval) { clearInterval(canvasInterval); canvasInterval = null; }
+const video = document.getElementById('noSleepVideo');
+if (video) { try { video.pause(); video.srcObject = null; } catch (e) {} }
+if (canvasStream) { try { canvasStream.getTracks().forEach(t => t.stop()); } catch (e) {} canvasStream = null; }
+}
+
+async function activateWakeLock() {
+let success = false;
+if (isWakeLockSupported()) success = await requestWakeLockAPI();
+if (!success) success = startCanvasStream();
+return success;
+}
+
+async function deactivateWakeLock() { await releaseWakeLockAPI(); stopCanvasStream(); }
+
+function updateWakeStatus() {
+const el = document.getElementById('wake-status');
+const txt = document.getElementById('wake-status-text');
+const btn = document.getElementById('wake-toggle-btn');
+if (!el || !txt || !btn) return;
+el.classList.remove('active', 'warn');
+const isActive = wakeLockSentinel !== null || canvasStream !== null;
+if (wakeLockEnabled && isActive) { el.classList.add('active'); txt.textContent = '✅ Écran allumé'; btn.textContent = 'Désactiver'; }
+else if (wakeLockEnabled && !isActive) { el.classList.add('warn'); txt.textContent = '⏳ En attente'; btn.textContent = 'Désactiver'; }
+else { txt.textContent = '💤 Veille automatique'; btn.textContent = 'Garder l\'écran allumé'; }
+}
+
+async function toggleWakeLock() {
+if (wakeLockEnabled) {
+wakeLockEnabled = false; await deactivateWakeLock();
+try { localStorage.setItem(WAKE_LOCK_PREF, '0'); } catch (e) {}
+showToast('Veille automatique', 'warn');
+} else {
+wakeLockEnabled = true;
+const ok = await activateWakeLock();
+try { localStorage.setItem(WAKE_LOCK_PREF, '1'); } catch (e) {}
+showToast(ok ? 'Écran allumé' : 'Activez manuellement', ok ? 'success' : 'warn');
+}
+updateWakeStatus();
+}
+
+document.addEventListener('visibilitychange', async () => {
+if (document.visibilityState === 'visible' && wakeLockEnabled) { await activateWakeLock(); updateWakeStatus(); }
+});
+
+async function ensureWakeLockActive() {
+if (!wakeLockEnabled) return;
+if (wakeLockSentinel === null && canvasStream === null) { await activateWakeLock(); updateWakeStatus(); }
+}
+
+// ─── Timing cache ───
+function loadTimingCache() { try { return JSON.parse(localStorage.getItem(TIMING_CACHE_KEY) || '{}'); } catch (e) { return {}; } }
+function saveTimingCache(c) { try { localStorage.setItem(TIMING_CACHE_KEY, JSON.stringify(c)); } catch (e) {} }
+function recordGenerationTime(key, ms) {
+const c = loadTimingCache();
+if (!c[key]) c[key] = [];
+c[key].push(ms);
+if (c[key].length > 10) c[key] = c[key].slice(-10);
+saveTimingCache(c); updateTimingDisplay();
+}
+function estimateGenerationTime(key, fallbackMs) {
+const c = loadTimingCache();
+const s = c[key];
+if (s && s.length > 0) {
+const sorted = [...s].sort((a, b) => a - b);
+const mid = Math.floor(sorted.length / 2);
+return sorted.length % 2 === 0 ? (sorted[mid-1] + sorted[mid]) / 2 : sorted[mid];
+}
+return fallbackMs;
+}
+function updateTimingDisplay() {
+const c = loadTimingCache();
+const v = c['video'] || [];
+const s = document.getElementById('stat-speed');
+const t = document.getElementById('stat-samples');
+if (!s || !t) return;
+if (v.length === 0) { s.textContent = 'en attente'; t.textContent = '0 génération'; return; }
+const avg = v.reduce((a, b) => a + b, 0) / v.length;
+s.textContent = (avg / 1000).toFixed(1) + ' s en moyenne';
+t.textContent = v.length + ' génération' + (v.length > 1 ? 's' : '');
+}
+
+// ─── État global ───
+const state = {
+referenceImage: null,
+selectedHooks: new Set(['depart', 'mer', 'dauphins', 'tempete', 'arrivee']),
+mangaStyle: 'shonen',
+durationFrames: 145,
+intensity: 'strong',
+isRunning: false,
+stopRequested: false,
+scenario: null,
+rawScenarioResponse: '',
+imagePrompts: [],
+images: [],
+videos: [],
+hooks: [],
+};
+
+function getApiKey() { try { return (localStorage.getItem(API_KEY_STORAGE) || '').trim(); } catch (e) { return ''; } }
+
+function saveApiKey() {
+const input = document.getElementById('api-key-input');
+if (!input) return;
+const key = input.value.trim();
+if (!key) {
+try { localStorage.removeItem(API_KEY_STORAGE); } catch (e) {}
+updateApiPanel(); showToast('Clé supprimée', 'warn'); return;
+}
+if (!key.startsWith('sk-')) { if (!confirm('La clé ne commence pas par "sk-". Sauvegarder ?')) return; }
+try {
+localStorage.setItem(API_KEY_STORAGE, key);
+updateApiPanel(); showToast('Clé enregistrée ✓', 'success');
+debugLog('success', 'API', 'Clé : ' + key.slice(0, 8) + '…' + key.slice(-4));
+input.blur();
+} catch (e) { showToast('Erreur sauvegarde', 'error'); }
+}
+
+function updateApiPanel() {
+const panel = document.getElementById('api-panel');
+const input = document.getElementById('api-key-input');
+const statusLine = document.getElementById('api-status-line');
+const statusText = document.getElementById('api-status-text');
+const key = getApiKey();
+if (!panel || !input || !statusLine || !statusText) return;
+if (key) {
+panel.classList.add('ok'); statusLine.classList.add('ok');
+statusText.textContent = 'Clé active · ' + key.slice(0, 8) + '…' + key.slice(-4);
+input.value = key; input.placeholder = '';
+} else {
+panel.classList.remove('ok'); statusLine.classList.remove('ok');
+statusText.textContent = 'Aucune clé API enregistrée';
+input.value = ''; input.placeholder = 'Collez votre clé API ici (sk-...)';
+}
+updateGenerateBtn();
+}
+
+function updateGenerateBtn() {
+const btn = document.getElementById('generate-btn');
+if (!btn) return;
+const hasKey = !!getApiKey();
+const hasRef = !!state.referenceImage;
+const hasHooks = state.selectedHooks.size > 0;
+btn.disabled = !hasKey || !hasRef || !hasHooks || state.isRunning;
+if (state.isRunning) btn.textContent = 'Création en cours…';
+else if (!hasRef) btn.textContent = 'Ajoutez une photo';
+else if (!hasKey) btn.textContent = 'Ajoutez votre clé API';
+else if (!hasHooks) btn.textContent = 'Sélectionnez au moins un hook';
+else btn.textContent = 'Créer ' + state.selectedHooks.size + ' hook' + (state.selectedHooks.size > 1 ? 's' : '') + ' TikTok (~' + Math.round(state.selectedHooks.size * (state.durationFrames / FRAME_RATE)) + 's)';
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function setStatus(text) {
+const bar = document.getElementById('status-bar');
+const txt = document.getElementById('status-text');
+if (!bar || !txt) return;
+if (text) { bar.classList.add('visible'); txt.textContent = text; }
+else bar.classList.remove('visible');
+}
+
+function formatEta(seconds) {
+if (seconds < 60) return Math.round(seconds) + 's';
+const m = Math.floor(seconds / 60); const s = Math.round(seconds % 60);
+return m + 'm' + (s > 0 ? ' ' + s + 's' : '');
+}
+
+function setPhase(phase, detail, eta) {
+const bar = document.getElementById('phase-bar');
+if (bar) bar.classList.add('visible');
+document.querySelectorAll('.phase-step').forEach(el => {
+el.classList.remove('active', 'done');
+const order = ['text', 'images', 'videos', 'done'];
+const curIdx = order.indexOf(phase);
+const elIdx = order.indexOf(el.dataset.phase);
+if (elIdx < curIdx) el.classList.add('done');
+else if (elIdx === curIdx) el.classList.add('active');
+});
+const d = document.getElementById('phase-detail');
+const e = document.getElementById('phase-eta');
+if (d) d.innerHTML = detail || '';
+if (e) e.textContent = eta || '';
+}
+
+// ─── Rendu des hooks ───
+function renderHooks() {
+const grid = document.getElementById('hooks-grid');
+if (!grid) return;
+let html = '';
+HOOKS_CATALOG.forEach(h => {
+const sel = state.selectedHooks.has(h.id);
+html += '<div class="hook-card ' + (sel ? 'selected' : '') + '" data-hook="' + h.id + '">' +
+'<div class="hc-emoji">' + h.emoji + '</div>' +
+'<div class="hc-name">' + esc(h.name) + '</div>' +
+'<div class="hc-desc">' + esc(h.desc) + '</div>' +
+'</div>';
+});
+grid.innerHTML = html;
+grid.querySelectorAll('[data-hook]').forEach(el => {
+el.addEventListener('click', () => {
+const id = el.dataset.hook;
+if (state.selectedHooks.has(id)) state.selectedHooks.delete(id);
+else state.selectedHooks.add(id);
+renderHooks();
+updateGenerateBtn();
+const badge = document.getElementById('hooks-count-badge');
+if (badge) badge.textContent = state.selectedHooks.size + ' sélectionné' + (state.selectedHooks.size > 1 ? 's' : '');
+});
+});
+const badge = document.getElementById('hooks-count-badge');
+if (badge) badge.textContent = state.selectedHooks.size + ' sélectionné' + (state.selectedHooks.size > 1 ? 's' : '');
+}
+
+// ─── Compresser l'image de référence ───
+async function compressReferenceImage(dataUrl) {
+return new Promise((resolve) => {
+const img = new Image();
+img.onload = () => {
+let { width, height } = img;
+const scale = Math.min(1, REF_MAX_SIDE / Math.max(width, height));
+width = Math.round(width * scale);
+height = Math.round(height * scale);
+const canvas = document.createElement('canvas');
+canvas.width = width;
+canvas.height = height;
+canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+resolve(canvas.toDataURL('image/jpeg', 0.88));
+};
+img.onerror = () => resolve(dataUrl);
+img.src = dataUrl;
+});
+}
+
+async function handleReferenceImage(file) {
+if (!file) return;
+if (!file.type.startsWith('image/')) { showToast('Fichier non image', 'error'); return; }
+const reader = new FileReader();
+reader.onload = async (e) => {
+const compressed = await compressReferenceImage(e.target.result);
+state.referenceImage = compressed;
+updateRefPreview();
+updateGenerateBtn();
+debugLog('success', 'REF', 'Photo de référence chargée (' + Math.round(compressed.length / 1024) + ' Ko)');
+showToast('Photo prête', 'success');
+};
+reader.onerror = () => showToast('Erreur lecture photo', 'error');
+reader.readAsDataURL(file);
+}
+
+function updateRefPreview() {
+const drop = document.getElementById('ref-drop');
+if (!drop) return;
+if (state.referenceImage) {
+drop.classList.add('has-image');
+drop.innerHTML = '<div class="ref-preview"><img src="' + state.referenceImage + '" alt="Référence"><div class="ref-label">Photo verrouillée · style manga appliqué</div><button type="button" class="ref-remove" id="ref-remove-btn">✕</button></div>';
+const btn = document.getElementById('ref-remove-btn');
+if (btn) btn.addEventListener('click', (e) => {
+e.stopPropagation();
+state.referenceImage = null;
+updateRefPreview();
+updateGenerateBtn();
+showToast('Photo supprimée', 'warn');
+});
+} else {
+drop.classList.remove('has-image');
+drop.innerHTML = '<input type="file" accept="image/*" id="ref-image-input">' +
+'<div class="ref-icon">📸</div>' +
+'<div class="ref-text"><strong>Cliquez pour choisir une photo</strong><br>Un selfie, une photo de groupe, une photo de vous…</div>' +
+'<div class="ref-hint">L\'IA gardera vos visages et vous représentera en style manga.</div>';
+bindRefInput();
+}
+}
+
+function bindRefInput() {
+const input = document.getElementById('ref-image-input');
+if (!input) return;
+input.addEventListener('change', (e) => {
+const file = e.target.files && e.target.files[0];
+if (file) handleReferenceImage(file);
+});
+}
+
+// ─── Construction des prompts ───
+function buildStyleReference() {
+return 'ABSOLUTE STYLE LOCK: ' + MANGA_STYLES[state.mangaStyle] + '. The output MUST be a manga/anime illustration, NOT a photorealistic image. Characters keep the EXACT same faces, hair, skin tones, gender, and group composition as the reference photo, but rendered as manga characters. Vertical 9:16 TikTok format.';
+}
+
+function buildScenarioPrompt(hooks, durationSec) {
+const hookList = hooks.map((h, i) => '- Hook ' + (i + 1) + ' (' + h.name + ') : ' + h.scene).join('\n');
+return [
+'You are a manga storyboard director creating 5 short TikTok hooks (each ~' + durationSec + ' seconds) for a real group of friends traveling by boat from Venezuela to Martinique.',
+'',
+'THE STORY: A real group of friends (visible in a reference photo provided by the user) makes an epic Caribbean crossing by boat from Venezuela to Martinique.',
+'',
+'SELECTED HOOKS TO GENERATE:',
+hookList,
+'',
+'VISUAL STYLE: ' + buildStyleReference(),
+'',
+'ABSOLUTE RULES:',
+'- All hooks MUST show the EXACT SAME group of friends, with consistent faces, hair, and clothing across all hooks.',
+'- Each hook must feel like a standalone TikTok scroll-stopper in the first 3 seconds.',
+'- Vertical 9:16 TikTok format.',
+'- NO text, no subtitles, no watermarks, no logos.',
+'- NO music mentioned (audio is ambient only).',
+'- Characters must be rendered as MANGA characters based on the reference photo.',
+'',
+'CRITICAL JSON RULES:',
+'- All string values MUST be on a SINGLE LINE. No real line breaks inside strings.',
+'- Escape quotes as \\". No trailing commas. No markdown.',
+'',
+'OUTPUT FORMAT (exact schema, ONLY this JSON):',
+'{',
+'  "title": "epic title for the crossing",',
+'  "characters": "detailed description of the group of friends visible in the reference photo: number of people, approximate ages, hairstyles, clothing, expressions — enough detail to keep them consistent across all frames",',
+'  "hooks": [',
+'    {',
+'      "hook_number": 1,',
+'      "hook_id": "the hook id",',
+'      "hook_name": "short name",',
+'      "first_frame_prompt": "detailed manga illustration prompt for the FIRST frame of this hook",',
+'      "last_frame_prompt": "detailed manga illustration prompt for the LAST frame of this hook",',
+'      "action_prompt": "detailed prompt describing the 6-second motion between first and last frame, in manga cinematic style",',
+'      "tiktok_hook_text": "a punchy 5-8 word French text that could appear as an overlay on the TikTok (short, punchy, scroll-stopping)"',
+'    }',
+'  ]',
+'}',
+'',
+'Each first_frame_prompt and last_frame_prompt MUST describe manga style with: line weight, screentones, lighting, camera angle, and the exact group of friends.',
+'Each action_prompt MUST describe ONE continuous manga-style movement.'
+].join('\n');
+}
+
+function buildImagePrompt(basePrompt, scenario, hookIndex, isLast) {
+return [
+buildStyleReference(),
+'',
+'CHARACTERS (MUST match exactly across all frames): ' + scenario.characters,
+'',
+'HOOK ' + (hookIndex + 1) + ' of ' + scenario.hooks.length + ' — ' + (isLast ? 'LAST' : 'FIRST') + ' FRAME.',
+'',
+basePrompt,
+'',
+'Vertical 9:16 TikTok format. Manga illustration. No text, no watermark, no logo, no on-screen graphic.'
+].join('\n');
+}
+
+function buildVideoPrompt(hook, scenario) {
+const intensityText = {
+subtle: 'subtle slow movement, contemplative',
+moderate: 'smooth moderate movement, elegant',
+strong: 'dynamic high-energy movement, epic, cinematic manga action'
+}[state.intensity] || 'smooth moderate movement';
+return [
+'CRITICAL: The first frame is the EXACT first frame of this video. The last frame is the EXACT last frame. Smooth interpolation between them.',
+'',
+'CHARACTERS (must remain IDENTICAL to the reference photo, rendered as manga characters): ' + scenario.characters,
+'',
+'ACTION: ' + hook.action_prompt,
+'',
+'STYLE: ' + MANGA_STYLES[state.mangaStyle] + '.',
+'',
+'CAMERA: ' + (state.intensity === 'strong' ? 'Dynamic cinematic camera movement — orbiting the group, whip pans, dramatic push-ins, epic reveals.' : 'Smooth cinematic camera movement — slow orbit, gentle push-in, elegant framing.'),
+'',
+'MOVEMENT INTENSITY: ' + intensityText + '.',
+'',
+'AUDIO: ONLY natural ambient sound — Caribbean wind, waves, seagulls, breath, no music, no instruments, no dialogue. No vocals, no speech.',
+'',
+'FORMAT: Vertical 9:16 TikTok, 24fps, manga illustration style, high detail.',
+'No text, no subtitles, no watermarks, no logos.',
+'Perfect continuity between first frame, motion, and last frame.'
+].join(' ');
+}
+
+// ─── API Agnes (identique à tes sources) ───
+async function apiFetch(url, options = {}, label = 'API', kind = 'default') {
+for (let attempt = 0; attempt < 7; attempt++) {
+if (state.stopRequested) throw new Error('Arrêt demandé');
+let bodyPreview = null;
+if (options.body) {
+try {
+const p = JSON.parse(options.body);
+const c = JSON.parse(JSON.stringify(p));
+if (c.image && typeof c.image === 'string' && c.image.length > 80) c.image = c.image.slice(0, 80) + '…[b64 ' + c.image.length + ']';
+if (c.last_frame && typeof c.last_frame === 'string' && c.last_frame.length > 80) c.last_frame = c.last_frame.slice(0, 80) + '…[b64]';
+bodyPreview = c;
+} catch (e) { bodyPreview = String(options.body).slice(0, 500); }
+}
+debugLog('api', 'REQ ' + label, (options.method || 'GET') + ' ' + url + ' (tentative ' + (attempt + 1) + ')', bodyPreview);
+try {
+const t0 = Date.now();
+const res = await fetch(url, options);
+debugLog('response', 'RÉP ' + label, 'HTTP ' + res.status + ' en ' + (Date.now() - t0) + 'ms');
+if (res.status === 429) {
+if (kind === 'image') { imageAttemptsSinceLastError = 0; createImageIntervalMs = Math.min(createImageIntervalMs + 1500, IMAGE_INTERVAL_MAX); }
+else if (kind === 'video') { videoAttemptsSinceLastError = 0; createVideoIntervalMs = Math.min(createVideoIntervalMs + 8000, VIDEO_INTERVAL_MAX); }
+const wait = [10, 20, 35, 50, 75, 100, 150][Math.min(attempt, 6)];
+debugLog('warn', 'RATELIMIT', '429 — attente ' + wait + 's');
+setStatus('L\'IA se prépare… (' + wait + 's)');
+await sleep(wait * 1000); continue;
+}
+if (res.status === 503) {
+const wait = [5, 10, 15, 20, 30, 45][Math.min(attempt, 5)];
+debugLog('warn', 'SERVICE', '503 — attente ' + wait + 's');
+setStatus('Le service se prépare… (' + wait + 's)');
+await sleep(wait * 1000); continue;
+}
+if (res.ok) {
+if (kind === 'image') {
+imageAttemptsSinceLastError++;
+if (imageAttemptsSinceLastError >= 5 && createImageIntervalMs > IMAGE_INTERVAL_MIN) { createImageIntervalMs = Math.max(createImageIntervalMs - 200, IMAGE_INTERVAL_MIN); imageAttemptsSinceLastError = 0; }
+} else if (kind === 'video') {
+videoAttemptsSinceLastError++;
+if (videoAttemptsSinceLastError >= 3 && createVideoIntervalMs > VIDEO_INTERVAL_MIN) { createVideoIntervalMs = Math.max(createVideoIntervalMs - 4000, VIDEO_INTERVAL_MIN); videoAttemptsSinceLastError = 0; }
+}
+}
+return res;
+} catch (e) {
+if (e.message === 'Arrêt demandé') throw e;
+const wait = [3, 5, 8, 12, 20, 30][Math.min(attempt, 5)];
+debugLog('warn', 'NETWORK', e.message + ' — retry ' + wait + 's');
+setStatus('Connexion… (' + wait + 's)');
+await sleep(wait * 1000);
+}
+}
+debugLog('error', 'API', 'Tentatives épuisées pour ' + label);
+return fetch(url, options);
+}
+
+// ─── Parseur JSON 5 stratégies (identique à tes sources) ───
+function escapeControlCharsInStrings(text) {
+let result = ''; let inString = false; let escape = false;
+for (let i = 0; i < text.length; i++) {
+const ch = text[i];
+if (escape) { result += ch; escape = false; continue; }
+if (ch === '\\') { result += ch; escape = true; continue; }
+if (ch === '"') { inString = !inString; result += ch; continue; }
+if (inString) {
+if (ch === '\n') { result += '\\n'; continue; }
+if (ch === '\r') { result += '\\r'; continue; }
+if (ch === '\t') { result += '\\t'; continue; }
+const code = ch.charCodeAt(0);
+if (code < 32) { result += '\\u' + code.toString(16).padStart(4, '0'); continue; }
+}
+result += ch;
+}
+return result;
+}
+
+function balanceJson(text) {
+let openBraces = 0, openBrackets = 0, inString = false, escape = false;
+for (let i = 0; i < text.length; i++) {
+const ch = text[i];
+if (escape) { escape = false; continue; }
+if (ch === '\\') { escape = true; continue; }
+if (ch === '"') { inString = !inString; continue; }
+if (inString) continue;
+if (ch === '{') openBraces++;
+else if (ch === '}') openBraces--;
+else if (ch === '[') openBrackets++;
+else if (ch === ']') openBrackets--;
+}
+let result = text;
+if (inString) result += '"';
+while (openBrackets > 0) { result += ']'; openBrackets--; }
+while (openBraces > 0) { result += '}'; openBraces--; }
+return result;
+}
+
+function salvageScenario(text) {
+const titleMatch = text.match(/"title"\s*:\s*"((?:[^"\\]|\\.)*)"/);
+const charactersMatch = text.match(/"characters"\s*:\s*"((?:[^"\\]|\\.)*)"/);
+const hooks = [];
+const hooksBlockMatch = text.match(/"hooks"\s*:\s*\[([\s\S]*)\]/);
+if (hooksBlockMatch) {
+const hookRegex = /\{[^{}]*?"hook_number"\s*:\s*(\d+)[^{}]*?"hook_id"\s*:\s*"((?:[^"\\]|\\.)*)"[^{}]*?"hook_name"\s*:\s*"((?:[^"\\]|\\.)*)"[^{}]*?"first_frame_prompt"\s*:\s*"((?:[^"\\]|\\.)*)"[^{}]*?"last_frame_prompt"\s*:\s*"((?:[^"\\]|\\.)*)"[^{}]*?"action_prompt"\s*:\s*"((?:[^"\\]|\\.)*)"[^{}]*?"tiktok_hook_text"\s*:\s*"((?:[^"\\]|\\.)*)"[^{}]*?\}/g;
+let m;
+while ((m = hookRegex.exec(hooksBlockMatch[1])) !== null) {
+hooks.push({
+hook_number: parseInt(m[1], 10),
+hook_id: m[2].replace(/\\"/g, '"'),
+hook_name: m[3].replace(/\\"/g, '"'),
+first_frame_prompt: m[4].replace(/\\"/g, '"').replace(/\\n/g, ' '),
+last_frame_prompt: m[5].replace(/\\"/g, '"').replace(/\\n/g, ' '),
+action_prompt: m[6].replace(/\\"/g, '"').replace(/\\n/g, ' '),
+tiktok_hook_text: m[7].replace(/\\"/g, '"')
+});
+}
+}
+if (hooks.length === 0) return null;
+return {
+title: titleMatch ? titleMatch[1].replace(/\\"/g, '"') : 'Traversée',
+characters: charactersMatch ? charactersMatch[1].replace(/\\"/g, '"') : 'A group of friends visible in the reference photo',
+hooks: hooks
+};
+}
+
+function extractJson(text) {
+if (!text) return null;
+let c = text.trim();
+const fm = c.match(/```(?:json)?\s*([\s\S]*?)```/);
+if (fm) c = fm[1].trim();
+const fb = c.indexOf('{');
+if (fb < 0) { debugLog('error', 'PARSE', 'Aucun { trouvé'); return null; }
+c = c.slice(fb);
+try { const r = JSON.parse(c); debugLog('success', 'PARSE', 'Stratégie 1 OK'); return r; }
+catch (e1) { debugLog('warn', 'PARSE', 'S1 échouée : ' + e1.message.slice(0, 120)); }
+try { const r = JSON.parse(escapeControlCharsInStrings(c)); debugLog('success', 'PARSE', 'Stratégie 2 OK'); return r; }
+catch (e2) { debugLog('warn', 'PARSE', 'S2 échouée : ' + e2.message.slice(0, 120)); }
+try {
+const lb = c.lastIndexOf('}');
+if (lb > 0) { const r = JSON.parse(escapeControlCharsInStrings(c.slice(0, lb + 1))); debugLog('success', 'PARSE', 'Stratégie 3 OK'); return r; }
+} catch (e3) { debugLog('warn', 'PARSE', 'S3 échouée : ' + e3.message.slice(0, 120)); }
+try { const r = JSON.parse(balanceJson(escapeControlCharsInStrings(c))); debugLog('success', 'PARSE', 'Stratégie 4 OK'); return r; }
+catch (e4) { debugLog('warn', 'PARSE', 'S4 échouée : ' + e4.message.slice(0, 120)); }
+try {
+const salvaged = salvageScenario(c);
+if (salvaged && salvaged.hooks && salvaged.hooks.length > 0) { debugLog('success', 'PARSE', 'Stratégie 5 (regex) — ' + salvaged.hooks.length + ' hooks'); return salvaged; }
+} catch (e5) { debugLog('error', 'PARSE', 'S5 échouée : ' + e5.message.slice(0, 120)); }
+debugLog('error', 'PARSE', 'Toutes stratégies échouées');
+return null;
+}
+
+// ─── Appels API ───
+async function generateScenario(hooks) {
+setPhase('text', '✍️ Écriture du scénario manga…', '');
+setStatus('L\'IA écrit votre épopée manga…');
+const durationSec = state.durationFrames / FRAME_RATE;
+const prompt = buildScenarioPrompt(hooks, durationSec);
+debugLog('ai', 'PROMPT SCÉNARIO', 'Envoyé', prompt);
+const body = {
+model: MODEL_TEXT,
+messages: [
+{ role: 'system', content: 'You are a manga storyboard director. You ALWAYS return valid JSON exactly matching the requested schema. All strings on single lines. No markdown, no commentary, no trailing commas.' },
+{ role: 'user', content: prompt }
+],
+temperature: TEXT_TEMPERATURE,
+max_tokens: TEXT_MAX_TOKENS,
+response_format: { type: 'json_object' }
+};
+const res = await apiFetch(API_BASE + '/chat/completions', {
+method: 'POST',
+headers: { 'Authorization': 'Bearer ' + getApiKey(), 'Content-Type': 'application/json' },
+body: JSON.stringify(body)
+}, 'Scénario', 'text');
+if (!res.ok) { const err = await res.text(); debugLog('error', 'SCÉNARIO', 'HTTP ' + res.status, err.slice(0, 2000)); throw new Error('HTTP ' + res.status); }
+const data = await res.json();
+const content = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
+state.rawScenarioResponse = content || '';
+const rawEl = document.getElementById('raw-scenario');
+if (rawEl) rawEl.textContent = content || '(vide)';
+const scenario = extractJson(content);
+if (!scenario || !scenario.hooks || !Array.isArray(scenario.hooks)) {
+throw new Error('Scénario invalide');
+}
+if (!scenario.characters) scenario.characters = 'A group of friends visible in the reference photo';
+debugLog('success', 'SCÉNARIO', scenario.hooks.length + ' hooks');
+return scenario;
+}
+
+async function generateImage(prompt) {
+const body = { model: MODEL_IMAGE, prompt: prompt, n: 1, size: '1024x1792', response_format: 'url' };
+const res = await apiFetch(API_BASE + '/images/generations', {
+method: 'POST',
+headers: { 'Authorization': 'Bearer ' + getApiKey(), 'Content-Type': 'application/json' },
+body: JSON.stringify(body)
+}, 'Image', 'image');
+if (!res.ok) { const err = await res.text(); throw new Error('HTTP ' + res.status); }
+const data = await res.json();
+const item = data.data && data.data[0];
+if (!item) throw new Error('Pas de donnée image');
+if (item.url) return item.url;
+if (item.b64_json) return 'data:image/png;base64,' + item.b64_json;
+throw new Error('Format image inconnu');
+}
+
+async function generateVideo(firstFrame, lastFrame, prompt) {
+const body = {
+model: MODEL_VIDEO, prompt: prompt,
+image: firstFrame, last_frame: lastFrame,
+num_frames: state.durationFrames, frame_rate: FRAME_RATE
+};
+const res = await apiFetch(API_BASE + '/videos', {
+method: 'POST',
+headers: { 'Authorization': 'Bearer ' + getApiKey(), 'Content-Type': 'application/json' },
+body: JSON.stringify(body)
+}, 'Vidéo', 'video');
+if (!res.ok) { const err = await res.text(); throw new Error('HTTP ' + res.status); }
+const data = await res.json();
+const videoId = data.video_id || data.id || data.task_id;
+if (!videoId) throw new Error('Pas de video_id');
+return videoId;
+}
+
+async function pollVideo(videoId, onProgress) {
+const estimatedMs = estimateGenerationTime('video', 30000 + state.durationFrames * 500);
+const estimatedSec = estimatedMs / 1000;
+const minWait = Math.min(VIDEO_FIRST_POLL_DELAY_SEC, Math.max(60, Math.floor(estimatedSec * 0.75)));
+let remaining = minWait;
+while (remaining > 0) {
+if (state.stopRequested) throw new Error('Arrêt demandé');
+onProgress('Préparation — ' + remaining + 's');
+await sleep(1000); remaining--;
+}
+for (let attempt = 0; attempt < VIDEO_MAX_POLL_ATTEMPTS; attempt++) {
+if (state.stopRequested) throw new Error('Arrêt demandé');
+if (attempt > 0) {
+const idx = Math.min(attempt - 1, VIDEO_POLL_INTERVALS.length - 1);
+let r = VIDEO_POLL_INTERVALS[idx];
+while (r > 0) {
+if (state.stopRequested) throw new Error('Arrêt demandé');
+onProgress('Le manga prend vie… — ' + r + 's');
+await sleep(1000); r--;
+}
+}
+const url = POLL_BASE + '?video_id=' + encodeURIComponent(videoId) + '&model_name=' + encodeURIComponent(MODEL_VIDEO);
+const res = await apiFetch(url, { method: 'GET', headers: { 'Authorization': 'Bearer ' + getApiKey() } }, 'Polling', 'video');
+const d = await res.json();
+const status = d.status || 'unknown';
+const progress = d.progress || 0;
+onProgress('Création — ' + progress + '%');
+if (status === 'completed' || status === 'succeeded' || status === 'done') {
+const videoUrl = (d.metadata && d.metadata.url) || d.url || (d.output && d.output.url);
+if (!videoUrl) throw new Error('Terminé mais pas d\'URL');
+return videoUrl;
+}
+if (status === 'failed' || status === 'error' || status === 'cancelled') throw new Error('Échec (' + status + ')');
+}
+throw new Error('Délai maximal dépassé');
+}
+
+// ─── Queue d'images en parallèle ───
+function createRateLimitedQueue(maxConcurrent, minIntervalMs) {
+let running = 0; let lastStart = 0;
+const queue = [];
+let resolveIdle = null;
+function tryNext() {
+if (running >= maxConcurrent) return;
+if (queue.length === 0) {
+if (running === 0 && resolveIdle) { resolveIdle(); resolveIdle = null; }
+return;
+}
+const now = Date.now();
+const wait = Math.max(0, lastStart + minIntervalMs - now);
+if (wait > 0) { setTimeout(tryNext, wait); return; }
+const task = queue.shift();
+running++;
+lastStart = Date.now();
+task().finally(() => { running--; setTimeout(tryNext, 0); });
+}
+return {
+add(fn) { return new Promise((resolve, reject) => { queue.push(() => fn().then(resolve, reject)); setTimeout(tryNext, 0); }); },
+idle() { return new Promise(r => { if (running === 0 && queue.length === 0) return r(); resolveIdle = r; }); }
+};
+}
+
+// ─── Rendu ───
+function renderScenario() {
+const panel = document.getElementById('scenario-panel');
+const card = document.getElementById('scenario-card');
+if (!panel || !card || !state.scenario) return;
+const s = state.scenario;
+let html = '<div class="scenario-title">' + esc(s.title || 'Traversée') + '</div>';
+html += '<div class="scenario-meta">' + s.hooks.length + ' hooks TikTok · Style ' + esc(state.mangaStyle) + '</div>';
+s.hooks.forEach((h, i) => {
+html += '<div class="scene-block" data-scene="' + i + '">';
+html += '<div class="scene-number">Hook ' + (i + 1) + ' — ' + esc(h.hook_name || '') + '</div>';
+if (h.tiktok_hook_text) {
+html += '<div class="scene-dialogue"><span class="speaker-name">Texte overlay TikTok</span>« ' + esc(h.tiktok_hook_text) + ' »</div>';
+}
+if (h.action_prompt) html += '<div class="scene-action">' + esc(h.action_prompt.slice(0, 220)) + (h.action_prompt.length > 220 ? '…' : '') + '</div>';
+html += '</div>';
+});
+card.innerHTML = html;
+panel.classList.add('visible');
+}
+
+function markScene(i, status) {
+const el = document.querySelector('.scene-block[data-scene="' + i + '"]');
+if (!el) return;
+el.classList.remove('active', 'done');
+if (status) el.classList.add(status);
+}
+
+function renderImagesGrid() {
+const grid = document.getElementById('images-grid');
+if (!grid || !state.scenario) return;
+let html = '<div class="image-card ref"><img src="' + state.referenceImage + '" alt=""><div class="img-label">Photo ref</div></div>';
+state.scenario.hooks.forEach((h, i) => {
+const img = state.images[i];
+const label = 'Hook ' + (i + 1);
+if (img && img.url) html += '<div class="image-card" data-img="' + i + '"><img src="' + img.url + '" alt=""><div class="img-label">' + label + '</div></div>';
+else html += '<div class="image-card loading" data-img="' + i + '">' + label + '</div>';
+});
+grid.innerHTML = html;
+}
+
+function updateImageCard(i, url) {
+const el = document.querySelector('.image-card[data-img="' + i + '"]');
+if (!el) return;
+el.classList.remove('loading');
+el.innerHTML = '<img src="' + url + '" alt=""><div class="img-label">Hook ' + (i + 1) + '</div>';
+}
+
+function renderQueue() {
+const queueEl = document.getElementById('queue');
+if (!queueEl) return;
+if (!state.videos.length) { queueEl.style.display = 'none'; return; }
+const totalV = state.videos.length;
+const doneV = state.videos.filter(v => v.status === 'done').length;
+const failedV = state.videos.filter(v => v.status === 'failed').length;
+const inProgressV = state.videos.filter(v => v.status === 'processing' || v.status === 'creating').length;
+const pendingV = totalV - doneV - failedV - inProgressV;
+const estV = estimateGenerationTime('video', 30000 + state.durationFrames * 500) / 1000;
+const eta = pendingV > 0 ? (pendingV * (createVideoIntervalMs / 1000)) + estV : (inProgressV * estV / Math.max(inProgressV, 1));
+let html = '<div class="queue-summary"><span class="progress-text">HOOKS : ' + doneV + '/' + totalV + '</span>';
+if (failedV > 0) html += '<span style="color:var(--error);">' + failedV + ' échec' + (failedV > 1 ? 's' : '') + '</span>';
+html += '<span class="eta-text">' + (doneV + failedV < totalV ? '≈ ' + formatEta(eta) + ' restant' : 'Terminé') + '</span></div>';
+html += state.videos.map(item => {
+let icon = '○', statusText = 'En file', cls = 'pending';
+if (item.status === 'creating') { icon = '◐'; statusText = 'Préparation…'; cls = 'creating'; }
+else if (item.status === 'processing') { icon = '◐'; statusText = item.progress || 'En cours…'; cls = 'processing'; }
+else if (item.status === 'done') { icon = '●'; statusText = 'Terminé'; cls = 'done'; }
+else if (item.status === 'failed') { icon = '✕'; statusText = 'Échec'; cls = 'failed'; }
+return '<div class="queue-item ' + cls + '"><div class="q-icon">' + icon + '</div><div class="q-name">' + esc(item.hookName) + '</div><div class="q-status">' + esc(statusText) + '</div></div>';
+}).join('');
+queueEl.innerHTML = html;
+queueEl.style.display = 'block';
+}
+
+function addToGallery(videoUrl, hook, index) {
+const galleryEl = document.getElementById('gallery');
+const galleryGrid = document.getElementById('gallery-grid');
+if (!galleryEl || !galleryGrid) return;
+galleryEl.style.display = 'block';
+const el = document.createElement('div');
+el.className = 'gallery-item';
+el.innerHTML = '<video controls preload="metadata" playsinline><source src="' + videoUrl + '" type="video/mp4"></video>' +
+'<div class="g-caption">' +
+'<strong>Hook ' + (index + 1) + ' — ' + esc(hook.hook_name || '') + '</strong>' +
+(hook.tiktok_hook_text ? '<div class="g-dialogue">« ' + esc(hook.tiktok_hook_text) + ' »</div>' : '') +
+'<span>Style ' + esc(state.mangaStyle) + ' · 9:16 TikTok</span>' +
+'</div>';
+galleryGrid.appendChild(el);
+}
+
+// ─── Phases ───
+async function runScenarioPhase() {
+setPhase('text', '✍️ Écriture du scénario manga…', '');
+try {
+const hooks = HOOKS_CATALOG.filter(h => state.selectedHooks.has(h.id));
+const scenario = await generateScenario(hooks);
+state.scenario = scenario;
+state.hooks = scenario.hooks;
+state.images = new Array(scenario.hooks.length).fill(null);
+state.videos = scenario.hooks.map((h, i) => ({
+index: i,
+hookId: h.hook_id,
+hookName: h.hook_name,
+status: 'pending',
+progress: null,
+videoId: null,
+videoUrl: null,
+startTime: null
+}));
+renderScenario(); renderImagesGrid(); renderQueue();
+debugLog('success', 'PHASE 1', scenario.hooks.length + ' hooks');
+return true;
+} catch (e) {
+debugLog('error', 'PHASE 1', e.message);
+showToast('Erreur scénario : ' + e.message.slice(0, 60), 'error', 4000);
+return false;
+}
+}
+
+async function runImagesPhase() {
+const total = state.scenario.hooks.length * 2; // first + last par hook
+setPhase('images', '🎨 Génération des keyframes manga…', '');
+debugLog('state', 'PHASE', 'Phase 2 — IMAGES parallèle x' + IMAGE_PARALLEL + ' (' + total + ' images)');
+const queue = createRateLimitedQueue(IMAGE_PARALLEL, IMAGE_INTERVAL_MS);
+let completed = 0;
+const tasks = [];
+for (let i = 0; i < state.scenario.hooks.length; i++) {
+const hook = state.scenario.hooks[i];
+const idx = i;
+tasks.push(queue.add(async () => {
+if (state.stopRequested) return;
+try {
+const prompt = buildImagePrompt(hook.first_frame_prompt, state.scenario, idx, false);
+const url = await generateImage(prompt);
+// On stocke comme image de référence pour la vidéo (une seule par hook suffit pour l'affichage)
+if (!state.images[idx]) state.images[idx] = { url: url, firstUrl: url, lastUrl: null };
+else state.images[idx].firstUrl = url;
+updateImageCard(idx, url);
+completed++;
+setPhase('images', '🎨 Keyframes : ' + completed + ' / ' + total, '');
+debugLog('success', 'IMAGE ' + (idx + 1) + '.1', 'OK');
+} catch (e) {
+if (e.message === 'Arrêt demandé') return;
+debugLog('error', 'IMAGE ' + (idx + 1) + '.1', e.message);
+completed++;
+}
+}));
+tasks.push(queue.add(async () => {
+if (state.stopRequested) return;
+try {
+const prompt = buildImagePrompt(hook.last_frame_prompt, state.scenario, idx, true);
+const url = await generateImage(prompt);
+if (state.images[idx]) state.images[idx].lastUrl = url;
+completed++;
+setPhase('images', '🎨 Keyframes : ' + completed + ' / ' + total, '');
+debugLog('success', 'IMAGE ' + (idx + 1) + '.2', 'OK');
+} catch (e) {
+if (e.message === 'Arrêt demandé') return;
+debugLog('error', 'IMAGE ' + (idx + 1) + '.2', e.message);
+completed++;
+}
+}));
+}
+await Promise.allSettled(tasks);
+await queue.idle();
+const ok = state.images.filter(x => x && x.firstUrl && x.lastUrl).length;
+debugLog(ok === state.scenario.hooks.length ? 'success' : 'warn', 'PHASE 2', 'Hooks avec keyframes complètes : ' + ok + '/' + state.scenario.hooks.length);
+return ok > 0;
+}
+
+async function runVideosPhase() {
+const total = state.videos.length;
+if (total === 0) return;
+setPhase('videos', '🎬 Génération des hooks vidéo…', '');
+debugLog('state', 'PHASE', 'Phase 3 — VIDÉOS (' + total + ')');
+createVideoIntervalMs = VIDEO_INTERVAL_SAFE;
+videoAttemptsSinceLastError = 0;
+const pollingTasks = [];
+for (let i = 0; i < total; i++) {
+if (state.stopRequested) break;
+const item = state.videos[i];
+const hook = state.scenario.hooks[i];
+const img = state.images[i];
+if (!img || !img.firstUrl || !img.lastUrl) {
+item.status = 'failed'; item.progress = 'Images manquantes';
+renderQueue(); continue;
+}
+item.status = 'creating'; item.progress = 'Préparation…';
+renderQueue(); markScene(i, 'active');
+setPhase('videos', '🎬 Hook ' + (i + 1) + ' / ' + total + ' — envoi…', '≈ ' + formatEta((total - i) * (createVideoIntervalMs / 1000 + 90)) + ' restant');
+try {
+const prompt = buildVideoPrompt(hook, state.scenario);
+const videoId = await generateVideo(img.firstUrl, img.lastUrl, prompt);
+item.videoId = videoId; item.startTime = Date.now();
+item.status = 'processing'; item.progress = 'En cours…';
+renderQueue();
+debugLog('success', 'HOOK ' + (i + 1), 'Tâche : ' + videoId);
+pollingTasks.push((async () => {
+try {
+const videoUrl = await pollVideo(videoId, (prog) => { item.progress = prog; renderQueue(); });
+const elapsed = Date.now() - item.startTime;
+recordGenerationTime('video', elapsed);
+item.status = 'done'; item.videoUrl = videoUrl; item.progress = 'Terminé';
+renderQueue(); markScene(i, 'done');
+addToGallery(videoUrl, hook, i);
+debugLog('success', 'HOOK ' + (i + 1), 'Terminé en ' + (elapsed / 1000).toFixed(1) + 's');
+} catch (e) {
+if (e.message === 'Arrêt demandé') { item.status = 'failed'; item.progress = 'Arrêté'; }
+else { item.status = 'failed'; item.progress = 'Échec'; debugLog('error', 'HOOK ' + (i + 1), e.message); }
+renderQueue();
+}
+})());
+} catch (e) {
+if (e.message === 'Arrêt demandé') break;
+item.status = 'failed'; item.progress = 'Échec';
+renderQueue(); debugLog('error', 'HOOK ' + (i + 1), e.message);
+}
+if (i < total - 1 && !state.stopRequested) {
+let waitSec = Math.ceil(createVideoIntervalMs / 1000);
+for (let r = waitSec; r > 0; r--) {
+if (state.stopRequested) break;
+setPhase('videos', '🌬️ Respiration — hook ' + (i + 2) + ' dans ' + r + 's', '≈ ' + formatEta((total - i - 1) * (createVideoIntervalMs / 1000 + 90)) + ' restant');
+await sleep(1000);
+}
+}
+}
+if (pollingTasks.length > 0) { setPhase('videos', '🎞️ Finalisation…', ''); await Promise.allSettled(pollingTasks); }
+const doneV = state.videos.filter(v => v.status === 'done').length;
+debugLog(doneV === total ? 'success' : 'warn', 'PHASE 3', 'Vidéos : ' + doneV + '/' + total);
+}
+
+// ─── Démarrage ───
+async function startGeneration() {
+if (state.isRunning) return;
+if (!state.referenceImage) { showToast('Ajoutez une photo', 'error'); return; }
+if (!getApiKey()) { showToast('Ajoutez votre clé API', 'error'); document.getElementById('api-key-input').focus(); return; }
+if (state.selectedHooks.size === 0) { showToast('Sélectionnez au moins un hook', 'error'); return; }
+
+state.isRunning = true; state.stopRequested = false;
+state.scenario = null; state.rawScenarioResponse = '';
+state.imagePrompts = []; state.images = []; state.videos = []; state.hooks = [];
+
+document.getElementById('gallery-grid').innerHTML = '';
+document.getElementById('gallery').style.display = 'none';
+document.getElementById('scenario-card').innerHTML = '';
+document.getElementById('scenario-panel').classList.remove('visible');
+document.getElementById('images-grid').innerHTML = '';
+document.getElementById('queue').innerHTML = '';
+document.getElementById('queue').style.display = 'none';
+document.getElementById('raw-scenario').textContent = '';
+document.getElementById('stop-btn').classList.add('visible');
+document.getElementById('generate-btn').disabled = true;
+document.getElementById('phase-bar').classList.add('visible');
+
+await ensureWakeLockActive();
+const totalStart = Date.now();
+debugLog('state', 'START', '════════════════════════════════════════');
+debugLog('state', 'START', 'DÉMARRAGE — Manga Hook TikTok Venezuela → Martinique');
+debugLog('state', 'CONFIG', 'Style manga : ' + state.mangaStyle);
+debugLog('state', 'CONFIG', 'Durée par hook : ' + state.durationFrames + ' frames = ' + (state.durationFrames / FRAME_RATE).toFixed(2) + 's');
+debugLog('state', 'CONFIG', 'Hooks sélectionnés : ' + state.selectedHooks.size);
+
+let success = false;
+try {
+const okScenario = await runScenarioPhase();
+if (!okScenario || state.stopRequested) throw new Error('Arrêt demandé');
+const okImages = await runImagesPhase();
+if (state.stopRequested) throw new Error('Arrêt demandé');
+if (!okImages) showToast('Keyframes manquantes — vidéos partielles', 'warn', 3500);
+await runVideosPhase();
+setPhase('done', '✦ Hooks terminés ✦', '');
+success = true;
+} catch (e) { debugLog('error', 'GLOBAL', e.message); }
+
+const totalElapsed = (Date.now() - totalStart) / 1000;
+const doneV = state.videos.filter(v => v.status === 'done').length;
+const totalV = state.videos.length;
+const summary = state.stopRequested
+? 'Arrêté — ' + doneV + '/' + totalV + ' hooks'
+: '✦ ' + doneV + '/' + totalV + ' hooks en ' + formatEta(totalElapsed) + ' ✦';
+debugLog('state', 'FIN', summary);
+setStatus(summary);
+await sleep(4500);
+setStatus(null);
+state.isRunning = false; state.stopRequested = false;
+document.getElementById('stop-btn').classList.remove('visible');
+updateGenerateBtn();
+if (success) showToast('Prêt — ' + doneV + ' hook' + (doneV > 1 ? 's' : ''), 'success', 4000);
+else if (doneV > 0) showToast(doneV + ' hook' + (doneV > 1 ? 's' : ''), 'warn', 3500);
+else showToast('Aucun hook généré', 'error', 3500);
+}
+
+function stopGeneration() {
+if (!state.isRunning) return;
+state.stopRequested = true;
+debugLog('warn', 'STOP', 'Arrêt demandé');
+setStatus('Arrêt en cours…');
+}
+
+// ─── Init ───
+(function init() {
+const saveBtn = document.getElementById('api-save-btn');
+if (saveBtn) saveBtn.addEventListener('click', saveApiKey);
+const stopBtn = document.getElementById('stop-btn');
+if (stopBtn) stopBtn.addEventListener('click', stopGeneration);
+const apiInput = document.getElementById('api-key-input');
+if (apiInput) apiInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); saveApiKey(); } });
+document.querySelectorAll('[data-toggle]').forEach(header => {
+header.addEventListener('click', () => { document.getElementById(header.dataset.toggle).classList.toggle('open'); });
+});
+bindRefInput();
+
+const mangaStyleSel = document.getElementById('manga-style-select');
+if (mangaStyleSel) mangaStyleSel.addEventListener('change', e => { state.mangaStyle = e.target.value; });
+const durationSel = document.getElementById('duration-select');
+if (durationSel) durationSel.addEventListener('change', e => { state.durationFrames = parseInt(e.target.value, 10); updateGenerateBtn(); });
+const intensitySel = document.getElementById('intensity-select');
+if (intensitySel) intensitySel.addEventListener('change', e => { state.intensity = e.target.value; });
+
+const hooksAllBtn = document.getElementById('hooks-all-btn');
+if (hooksAllBtn) hooksAllBtn.addEventListener('click', () => {
+state.selectedHooks = new Set(HOOKS_CATALOG.map(h => h.id));
+renderHooks(); updateGenerateBtn();
+});
+const hooksNoneBtn = document.getElementById('hooks-none-btn');
+if (hooksNoneBtn) hooksNoneBtn.addEventListener('click', () => {
+state.selectedHooks = new Set();
+renderHooks(); updateGenerateBtn();
+});
+
+const generateBtn = document.getElementById('generate-btn');
+if (generateBtn) generateBtn.addEventListener('click', startGeneration);
+const wakeBtn = document.getElementById('wake-toggle-btn');
+if (wakeBtn) wakeBtn.addEventListener('click', toggleWakeLock);
+
+const debugHeader = document.getElementById('debug-header');
+if (debugHeader) debugHeader.addEventListener('click', (e) => { if (e.target.tagName === 'BUTTON') return; toggleDebugCollapse(); });
+const debugCollapseBtn = document.getElementById('debug-collapse-btn');
+if (debugCollapseBtn) debugCollapseBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleDebugCollapse(); });
+const debugClearBtn = document.getElementById('debug-clear-btn');
+if (debugClearBtn) debugClearBtn.addEventListener('click', (e) => { e.stopPropagation(); clearDebug(); });
+const debugCopyBtn = document.getElementById('debug-copy-btn');
+if (debugCopyBtn) debugCopyBtn.addEventListener('click', (e) => { e.stopPropagation(); copyDebug(); });
+
+const rawToggle = document.getElementById('raw-scenario-toggle');
+if (rawToggle) {
+rawToggle.addEventListener('click', () => {
+const el = document.getElementById('raw-scenario');
+if (!el) return;
+el.classList.toggle('visible');
+rawToggle.textContent = el.classList.contains('visible') ? '▾ Masquer le scénario brut' : '▸ Voir la réponse brute du scénario (JSON)';
+});
+}
+
+try { wakeLockEnabled = localStorage.getItem(WAKE_LOCK_PREF) === '1'; } catch (e) {}
+if (wakeLockEnabled) activateWakeLock().then(() => updateWakeStatus());
+
+updateApiPanel();
+updateTimingDisplay();
+updateWakeStatus();
+renderHooks();
+updateRefPreview();
+debugLog('success', 'INIT', 'Manga Hook TikTok prêt');
+debugLog('info', 'INIT', 'Pipeline : PHOTO → SCÉNARIO → KEYFRAMES → VIDÉOS MANGA');
+debugLog('info', 'INIT', 'Modèles : ' + MODEL_TEXT + ' / ' + MODEL_IMAGE + ' / ' + MODEL_VIDEO);
+debugLog('info', 'INIT', '10 hooks disponibles · 5 par défaut · style ' + state.mangaStyle);
+})();
+</script>
+</body>
+</html>
